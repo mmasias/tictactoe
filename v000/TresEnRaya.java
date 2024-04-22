@@ -24,6 +24,7 @@ class TresEnRaya {
             }
             turno.cambiar();
         } while (tablero.hayTresEnRaya());
+        jugadores[turno.noToca()].celebrar();
     }
 
     public static void main(String[] args){
