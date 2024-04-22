@@ -45,3 +45,18 @@ Recapitulamos, vemos las clases que quedan pendientes y elegimos la que sigue.
 - [x] Codificamos el metodo que devuelve a quién no le toca: ***noToca()***
 - [x] Codificamos el metodo que cambia el turno: ***cambiar()***
 
+Recapitulamos, vemos la última clase pendiente y empezamos:
+
+## Cuarta iteración
+
+- [x] Elegimos la clase: ***Jugador***
+- [x] Definimos/leemos la interfaz: devolver el color, poner ficha, mover ficha y celebrar
+- [x] Definimos los atributos para cumplir con los métodos anteriormente indicados.
+  - [x] El color de la ficha
+- [x] Codificamos los métodos
+  - [x] Codificamos el metodo que devuelve el color del jugador
+  - [x] Codificamos el metodo que celebra la victoria
+  - [x] Codificamos el metodo que permite poner una ficha
+  - [x] Codificamos el metodo que permite mover una ficha
+
+> En la siguiente iteración crearemos (y ajustaremos) las clases, métodos y demás que derivan de estas clases (puede ser durante la construcción o al final de la misma). En este caso, la clase Coordenada y los métodos de la clase Tablero.

@@ -4,7 +4,7 @@ class Turno {
 
     private int valor;
 
-    private Turno() {
+    public Turno() {
         valor = (int) (Math.random() * 2);
     }
 
