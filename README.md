@@ -11,4 +11,5 @@
   - [x] Que al que le toca ponga una ficha
   - [x] Lo anterior se debe repetir hasta que haya tres en raya
   - [x] Pero además hay que cambiar el turno
-
+  - [x] Y validar que luego de colocar tres veces, lo que debe hacer es mover en lugar de poner
+  
