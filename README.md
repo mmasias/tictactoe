@@ -18,3 +18,9 @@
 
 > Creamos las clases, métodos y demás que derivan de estas clases (puede ser durante la construcción o al final de la misma).
 
+Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
+
+## Segunda iteración
+
+- [ ] Elegir una clase: ***Tablero***
+- [ ] Definir la interfaz y los atributos
