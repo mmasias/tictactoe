@@ -62,4 +62,20 @@ class Tablero {
         }
         return false;
     }
+
+    public boolean ocupado(Coordenada coordenada) {
+
+    }
+
+    public void ponerFicha(Coordenada coordenada, char color) {
+
+    }
+
+    public boolean vacio(Coordenada coordenada) {
+     
+    }
+
+    public void sacarFicha(Coordenada coordenada) {
+
+    }
 }

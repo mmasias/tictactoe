@@ -20,15 +20,15 @@ class Jugador {
         Coordenada coordenada = new Coordenada();
         do {
             coordenada.recoger();
-        } while (!coordenada.valida() || tablero.ocupado(coordenada));
+        } while (!coordenada.esValida() || tablero.ocupado(coordenada));
         tablero.ponerFicha(coordenada, color);
     }
 
     public void moverFicha(Tablero tablero) {
-        Coordenada origen = new Coordenada();
+        Coordenada coordenada = new Coordenada();
         do {
             coordenada.recoger();
-        } while (!coordenada.valida() || tablero.vacio(coordenada));
+        } while (!coordenada.esValida() || tablero.vacio(coordenada));
         tablero.sacarFicha(coordenada);
         this.ponerFicha(tablero);
     }
