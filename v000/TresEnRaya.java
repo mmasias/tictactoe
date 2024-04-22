@@ -15,8 +15,10 @@ class TresEnRaya {
     }
 
     public void jugar(){
-        tablero.mostrar();
-        jugadores[turno.toca()].ponerFicha(tablero);
+        do {
+            tablero.mostrar();
+            jugadores[turno.toca()].ponerFicha(tablero);
+        } while (tablero.hayTresEnRaya());
     }
 
     public static void main(String[] args){

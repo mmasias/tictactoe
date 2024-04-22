@@ -9,4 +9,5 @@
 - [ ]  Codificar los métodos
   - [x] Mostrar el tablero
   - [x] Que al que le toca ponga una ficha
+  - [ ] Lo anterior se debe repetir hasta que haya tres en raya
 
