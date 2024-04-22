@@ -23,7 +23,7 @@ class TresEnRaya {
                 jugadores[turno.toca()].moverFicha(tablero);
             }
             turno.cambiar();
-        } while (tablero.hayTresEnRaya());
+        } while (!tablero.hayTresEnRaya());
         jugadores[turno.noToca()].celebrar();
     }
 

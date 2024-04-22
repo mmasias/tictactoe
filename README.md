@@ -29,3 +29,5 @@ Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
   - [x] Inicializamos el array en el constructor
 - [x] Codificar los métodos
   - [x] Codificamos el método que muestra el tablero: ***mostrar()***
+  - [x] Codificamos el método que devuelve si hay tres en raya
+    - [x] Apoyándome de un métoro privado que valida si hay tres en raya para un jugador.
