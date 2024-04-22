@@ -6,4 +6,7 @@
   - [x] Tablero - 1 tablero
   - [x] Jugador - 2 jugadores
   - [x] Turno - 1 turno
-- [ ]  
+- [ ]  Codificar los métodos
+  - [x] Mostrar el tablero
+  - [x] Que al que le toca ponga una ficha
+
