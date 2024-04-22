@@ -25,7 +25,15 @@ class Tablero {
     }
 
     public boolean estaCompleto(Jugador jugador) {
-        
+        int conteoFichas = 0;
+        for (int i = 0; i < casillas.length; i++) {
+            for (int j = 0; j < casillas[i].lenght; j++) {
+                if (casillas[i][j] == jugador.color()) {
+                    conteoFichas++;
+                }
+            }
+        }
+        return conteoFichas==3;
     }
 
     public boolean hayTresEnRaya() {

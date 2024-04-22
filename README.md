@@ -31,3 +31,4 @@ Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
   - [x] Codificamos el método que muestra el tablero: ***mostrar()***
   - [x] Codificamos el método que devuelve si hay tres en raya
     - [x] Apoyándome de un métoro privado que valida si hay tres en raya para un jugador.
+  - [x] Codificamos el método que indica si el jugador ya puso todas sus fichas.
