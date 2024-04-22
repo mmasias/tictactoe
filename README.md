@@ -32,3 +32,16 @@ Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
   - [x] Codificamos el método que devuelve si hay tres en raya
     - [x] Apoyándome de un métoro privado que valida si hay tres en raya para un jugador.
   - [x] Codificamos el método que indica si el jugador ya puso todas sus fichas.
+
+Recapitulamos, vemos las clases que quedan pendientes y elegimos la que sigue.
+
+## Tercera iteración
+
+- [x] Elegir la clase: ***Turno***
+- [x] Definimos/leemos la interfaz: a quién le toca, a quién no le toca y cambio de turno.
+- [x] Definimos los atributos para cumplir con los métodos anteriormente indicados.
+  - [x] Almacenaremos el turno en un entero.
+- [x] Codificamos el metodo que devuelve a quién le toca: ***toca()***
+- [x] Codificamos el metodo que devuelve a quién no le toca: ***noToca()***
+- [x] Codificamos el metodo que cambia el turno: ***cambiar()***
+
