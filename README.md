@@ -22,5 +22,10 @@ Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
 
 ## Segunda iteración
 
-- [ ] Elegir una clase: ***Tablero***
-- [ ] Definir la interfaz y los atributos
+- [x] Elegir una clase: ***Tablero***
+- [x] Definir la interfaz: en este caso, los métodos ya están dados.
+- [x] Definir los atributos necesarios para cumplir con los métodos anteriormente indicados (*mostrar, ver si un jugador ya puso todas sus fichas y ver si hay tres en raya*)
+  - [x] Almacenaremos las fichas en un array de caracteres.
+  - [x] Inicializamos el array en el constructor
+- [x] Codificar los métodos
+  - [x] Codificamos el método que muestra el tablero: ***mostrar()***
