@@ -10,4 +10,12 @@ public class Coordenada {
 
     }
 
+    public int getFila() {
+
+    }
+
+    public int getColumna() {
+
+    }
+
 }

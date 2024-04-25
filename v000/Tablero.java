@@ -64,18 +64,18 @@ class Tablero {
     }
 
     public boolean ocupado(Coordenada coordenada) {
-
+        return casillas[coordenada.getFila()-1][coordenada.getColumna()-1] == '_';
     }
 
     public void ponerFicha(Coordenada coordenada, char color) {
-
+        casillas[coordenada.getFila()-1][coordenada.getColumna()-1] = color;
     }
 
     public boolean vacio(Coordenada coordenada) {
-     
+        return !ocupado(coordenada));
     }
 
     public void sacarFicha(Coordenada coordenada) {
-
+        casillas[coordenada.getFila()-1][coordenada.getColumna()-1] = '_';
     }
 }

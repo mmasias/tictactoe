@@ -72,3 +72,29 @@ Recapitulamos, vemos la última clase pendiente y empezamos:
   - [x] Codificamos el metodo que permite mover una ficha
 
 > En la siguiente iteración crearemos (y ajustaremos) las clases, métodos y demás que derivan de estas clases (puede ser durante la construcción o al final de la misma). En este caso, la clase Coordenada y los métodos de la clase Tablero.
+
+### Quinta iteración
+
+- [x] Elegimos la clase: Tablero
+- [x] Definimos/leemos la interfaz: nuevos métodos derivados de la iteración anterior.
+- [x] Definimos los atributos para cumplir con los métodos anteriormente indicados.
+  - [x] Ninguno
+- [x] Codificamos los métodos
+  - [x] Codificamos el método que indica si una casilla está ocupada
+  - [x] Codificamos el método que indica si una casilla está vacía
+  - [x] Codificamos el método que permite poner una ficha
+  - [x] Codificamos el método que permite retirar una ficha
+
+<!--
+---
+
+### *N* iteración
+
+- [x] Elegimos la clase: 
+- [x] Definimos/leemos la interfaz: 
+- [x] Definimos los atributos para cumplir con los métodos anteriormente indicados.
+  - [x] 
+- [x] Codificamos los métodos
+  - [x] 
+
+-->
