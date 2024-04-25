@@ -32,6 +32,8 @@ El programa a resolver debe permitir a dos usuarios jugar el tres En raya
 
 Recapitulamos, vemos las clases creadas y elegimos una clase para continuar
 
+---
+
 ### Segunda iteración
 
 - [x] Elegir una clase: ***Tablero***
@@ -73,6 +75,8 @@ Recapitulamos, vemos la última clase pendiente y empezamos:
 
 > En la siguiente iteración crearemos (y ajustaremos) las clases, métodos y demás que derivan de estas clases (puede ser durante la construcción o al final de la misma). En este caso, la clase Coordenada y los métodos de la clase Tablero.
 
+---
+
 ### Quinta iteración
 
 - [x] Elegimos la clase: Tablero
@@ -84,6 +88,18 @@ Recapitulamos, vemos la última clase pendiente y empezamos:
   - [x] Codificamos el método que indica si una casilla está vacía
   - [x] Codificamos el método que permite poner una ficha
   - [x] Codificamos el método que permite retirar una ficha
+
+### Sexta iteración
+
+- [x] Elegimos la clase: Coordenada
+- [x] Definimos/leemos la interfaz: Recoger datos, indicar si es válida, indicar fila, indicar columna.
+- [x] Definimos los atributos para cumplir con los métodos anteriormente indicados.
+  - [x] la fila y la columna
+- [x] Codificamos los métodos
+  - [x] Codificamos el método que recoge los datos de una coordenada
+  - [x] Codificamos el método que indica si los datos pertenecen a una coordenada válida
+  - [x] Codificamos el método que devuelven la fila
+  - [x] Codificamos el método que devuelven la columna
 
 <!--
 ---
