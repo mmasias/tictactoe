@@ -71,7 +71,7 @@ class Tablero {
     }
 
     public boolean vacio(Coordenada coordenada) {
-        return !ocupado(coordenada));
+        return !ocupado(coordenada);
     }
 
     public void sacarFicha(Coordenada coordenada) {
