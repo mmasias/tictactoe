@@ -8,12 +8,17 @@ public class Coordenada {
     private int columna;
 
     public void recoger() {
+        boolean error = false;
         do  {
             System.out.println("> Fila? [1..3]");
             this.fila = new Scanner(System.in).nextInt();
             System.out.println("> Columna? [1..3]");
             this.columna = new Scanner(System.in).nextInt();
-        } while (!this.esValida());
+            error = !this.esValida();
+            if (error) {
+                System.out.println("ERROR > Coordenada inválida!");
+            }
+        } while (error);
     }
 
     public boolean esValida() {

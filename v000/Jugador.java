@@ -17,18 +17,30 @@ class Jugador {
     }
 
     public void ponerFicha(Tablero tablero) {
+        boolean error = false;
         Coordenada coordenada = new Coordenada();
         do {
             coordenada.recoger();
-        } while (!coordenada.esValida() || tablero.ocupado(coordenada));
+            boolean valida = coordenada.esValida();
+            boolean ocupado = tablero.ocupado(coordenada);
+            error = !valida || ocupado;
+            if (ocupado)
+                System.out.println("La posición está ocupada!");
+        } while (error);
         tablero.ponerFicha(coordenada, color);
     }
 
     public void moverFicha(Tablero tablero) {
+        boolean error = false;
         Coordenada coordenada = new Coordenada();
         do {
             coordenada.recoger();
-        } while (!coordenada.esValida() || tablero.vacio(coordenada));
+            boolean valida = coordenada.esValida();
+            boolean vacio = tablero.vacio(coordenada);
+            error = !valida || vacio;
+            if (vacio)
+                System.out.println("No hay ficha en la posición indicada");
+        } while (error);
         tablero.sacarFicha(coordenada);
         this.ponerFicha(tablero);
     }

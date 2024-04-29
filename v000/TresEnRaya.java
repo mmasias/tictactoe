@@ -1,12 +1,12 @@
 package v000;
 
 class TresEnRaya {
-    
+
     private Tablero tablero;
     private Jugador[] jugadores;
     private Turno turno;
 
-    public TresEnRaya(){
+    public TresEnRaya() {
         tablero = new Tablero();
         jugadores = new Jugador[2];
         jugadores[0] = new Jugador('x');
@@ -14,7 +14,7 @@ class TresEnRaya {
         turno = new Turno();
     }
 
-    public void jugar(){
+    public void jugar() {
         do {
             tablero.mostrar();
             if (!tablero.estaCompleto(jugadores[turno.toca()])) {
@@ -27,7 +27,7 @@ class TresEnRaya {
         jugadores[turno.noToca()].celebrar();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         TresEnRaya tresEnRaya = new TresEnRaya();
         tresEnRaya.jugar();
     }
