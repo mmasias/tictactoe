@@ -3,20 +3,22 @@ package v000;
 class Tablero {
 
     private char[][] casillas;
+    private final int DIMENSION = 3;
+    private final char VACIA = '_';
 
     public Tablero() {
-        casillas = new char[3][3];
+        casillas = new char[DIMENSION][DIMENSION];
 
-        for (int i = 0; i < casillas.length; i++) {
-            for (int j = 0; j < casillas[i].length; j++) {
-                casillas[i][j] = '_';
+        for (int i = 0; i < DIMENSION; i++) {
+            for (int j = 0; j < DIMENSION; j++) {
+                casillas[i][j] = VACIA;
             }
         }
     }
 
     public void mostrar() {
-        for (int i = 0; i < casillas.length; i++) {
-            for (int j = 0; j < casillas[i].length; j++) {
+        for (int i = 0; i < DIMENSION; i++) {
+            for (int j = 0; j < DIMENSION; j++) {
                 System.out.print(" " + casillas[i][j]);
             }
             System.out.println();
@@ -25,8 +27,8 @@ class Tablero {
 
     public boolean estaCompleto(Jugador jugador) {
         int conteoFichas = 0;
-        for (int i = 0; i < casillas.length; i++) {
-            for (int j = 0; j < casillas[i].length; j++) {
+        for (int i = 0; i < DIMENSION; i++) {
+            for (int j = 0; j < DIMENSION; j++) {
                 if (casillas[i][j] == jugador.color()) {
                     conteoFichas++;
                 }
@@ -40,22 +42,21 @@ class Tablero {
     }
 
     private boolean hayTresEnRaya(char color) {
-        int[] filas = new int[3];
-        int[] columnas = new int[3];
+        int[] filas = new int[DIMENSION];
+        int[] columnas = new int[DIMENSION];
         int diagonal = 0;
         int secundaria = 0;
-        for (int i = 0; i < casillas.length; i++) {
-            for (int j = 0; j < casillas[i].length; j++) {
+        for (int i = 0; i < DIMENSION; i++) {
+            for (int j = 0; j < DIMENSION; j++) {
                 if (color == casillas[i][j]) {
                     filas[i]++;
                     columnas[j]++;
                     diagonal = diagonal + ((i == j) ? 1 : 0);
                     secundaria = secundaria + ((i + j == 2) ? 1 : 0);
 
-                    if (filas[i] == 3 || columnas[j] == 3 || diagonal == 3 || secundaria == 3) {
+                    if (filas[i] == DIMENSION || columnas[j] == DIMENSION || diagonal == DIMENSION || secundaria == DIMENSION) {
                         return true;
                     }
-
                 }
             }
         }
