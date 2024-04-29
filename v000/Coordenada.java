@@ -15,9 +15,8 @@ public class Coordenada {
             System.out.println("> Columna? [1..3]");
             this.columna = new Scanner(System.in).nextInt();
             error = !this.esValida();
-            if (error) {
+            if (error)
                 System.out.println("ERROR > Coordenada inválida!");
-            }
         } while (error);
     }
 
