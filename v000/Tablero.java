@@ -43,25 +43,13 @@ class Tablero {
     }
 
     private boolean hayTresEnRaya(char color) {
-        int[] filas = new int[DIMENSION];
-        int[] columnas = new int[DIMENSION];
-        int diagonal = 0;
-        int secundaria = 0;
-        for (int i = 0; i < DIMENSION; i++) {
-            for (int j = 0; j < DIMENSION; j++) {
-                if (color == casillas[i][j]) {
-                    filas[i]++;
-                    columnas[j]++;
-                    diagonal = diagonal + ((i == j) ? 1 : 0);
-                    secundaria = secundaria + ((i + j == 2) ? 1 : 0);
-
-                    if (filas[i] == DIMENSION || columnas[j] == DIMENSION || diagonal == DIMENSION || secundaria == DIMENSION) {
-                        return true;
-                    }
-                }
-            }
+        if (!this.estaCompleto(color)){
+            return false;
         }
-        return false;
+        int fila = this.getFila(color);
+        int direccion = fichas[fila][0].direcion(fichas[fila][1]);
+        if (direccion==-1) return false;
+        return direccion == fichas[fila][1].direcion(fichas[fila][2]);
     }
 
     public boolean ocupado(Coordenada coordenada) {
