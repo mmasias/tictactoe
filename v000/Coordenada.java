@@ -7,6 +7,12 @@ public class Coordenada {
     private int fila;
     private int columna;
 
+    private final Intervalo LIMITES;
+
+    public Coordenada(){
+        LIMITES = new Intervalo(1, 3);
+    }
+
     public void recoger() {
         boolean error = false;
         do {
@@ -21,7 +27,7 @@ public class Coordenada {
     }
 
     public boolean esValida() {
-        return (fila >= 1 && fila <= 3 && columna >= 1 && columna <= 3);
+        return (LIMITES.incluye(fila) && LIMITES.incluye(columna));
     }
 
     public int getFila() {
