@@ -20,7 +20,7 @@ class Tablero {
         }
     }
 
-    private String getColor(Coordenada coordenada) {
+    private char getColor(Coordenada coordenada) {
         if (this.ocupada(coordenada, 'o')){ return 'o'; }
         if (this.ocupada(coordenada, 'x')){ return 'x'; }
         return VACIA;
