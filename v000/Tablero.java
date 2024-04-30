@@ -26,18 +26,6 @@ class Tablero {
         return VACIA;
     }
 
-    public boolean estaCompleto(Jugador jugador) {
-        int conteoFichas = 0;
-        for (int i = 0; i < DIMENSION; i++) {
-            for (int j = 0; j < DIMENSION; j++) {
-                if (casillas[i][j] == jugador.color()) {
-                    conteoFichas++;
-                }
-            }
-        }
-        return conteoFichas == 3;
-    }
-
     public boolean hayTresEnRaya() {
         return this.hayTresEnRaya('x') || this.hayTresEnRaya('o');
     }
@@ -51,6 +39,19 @@ class Tablero {
         if (direccion==-1) return false;
         return direccion == fichas[fila][1].direcion(fichas[fila][2]);
     }
+
+    private boolean estaCompleto(char color){
+        int fila = this.getFila(color);
+        int conteoFichas = 0;
+        for (int i=0; i<fichas[fila].length; i++){
+            conteoFichas++;
+        }
+        return conteoFichas == DIMENSION;
+    }
+
+    public boolean estaCompleto(Jugador jugador) {
+        return this.estaCompleto(jugador.color());
+    }    
 
     public boolean ocupado(Coordenada coordenada) {
         return casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] != VACIA;
