@@ -34,7 +34,7 @@ class Tablero {
                 }
             }
         }
-        return conteoFichas==3;
+        return conteoFichas == 3;
     }
 
     public boolean hayTresEnRaya() {
@@ -64,11 +64,11 @@ class Tablero {
     }
 
     public boolean ocupado(Coordenada coordenada) {
-        return casillas[coordenada.getFila()-1][coordenada.getColumna()-1] != '_';
+        return casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] != VACIA;
     }
 
     public void ponerFicha(Coordenada coordenada, char color) {
-        casillas[coordenada.getFila()-1][coordenada.getColumna()-1] = color;
+        casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] = color;
     }
 
     public boolean vacio(Coordenada coordenada) {
@@ -76,6 +76,6 @@ class Tablero {
     }
 
     public void sacarFicha(Coordenada coordenada) {
-        casillas[coordenada.getFila()-1][coordenada.getColumna()-1] = '_';
+        casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] = VACIA;
     }
 }

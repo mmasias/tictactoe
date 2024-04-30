@@ -9,7 +9,7 @@ public class Coordenada {
 
     public void recoger() {
         boolean error = false;
-        do  {
+        do {
             System.out.println("> Fila? [1..3]");
             this.fila = new Scanner(System.in).nextInt();
             System.out.println("> Columna? [1..3]");
