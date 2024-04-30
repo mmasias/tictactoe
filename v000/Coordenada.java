@@ -7,10 +7,15 @@ public class Coordenada {
     private int fila;
     private int columna;
 
-    private final Intervalo LIMITES;
+    private static final Intervalo LIMITES = new Intervalo(1, 3);;
 
     public Coordenada(){
-        LIMITES = new Intervalo(1, 3);
+    }
+
+    public Coordenada(int fila, int columna) {
+        this.fila = fila;
+        this.columna = columna;
+        assert this.esValida();
     }
 
     public void recoger() {
@@ -36,6 +41,14 @@ public class Coordenada {
 
     public int getColumna() {
         return columna;
+    }
+
+    public boolean igual(Coordenada coordenada) {
+        return this.fila == coordenada.fila && this.columna == coordenada.columna;
+    }
+
+    public static void main(String[] args) {
+        Coordenada coordenada = new Coordenada(0,0);
     }
 
 }

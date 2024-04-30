@@ -12,17 +12,17 @@ class Tablero {
     }
 
     public void mostrar() {
-        for (int i = 0; i < DIMENSION; i++) {
-            for (int j = 0; j < DIMENSION; j++) {
-                System.out.println(this.getColor(new Coordenada(i,j)) + " ");    
+        for (int i = 1; i <= DIMENSION; i++) {
+            for (int j = 1; j <= DIMENSION; j++) {
+                System.out.print(this.getColor(new Coordenada(i,j)) + " ");    
             }
             System.out.println();
         }
     }
 
     private char getColor(Coordenada coordenada) {
-        if (this.ocupada(coordenada, 'o')){ return 'o'; }
-        if (this.ocupada(coordenada, 'x')){ return 'x'; }
+        if (this.ocupado(coordenada, 'o')){ return 'o'; }
+        if (this.ocupado(coordenada, 'x')){ return 'x'; }
         return VACIA;
     }
 
@@ -44,7 +44,9 @@ class Tablero {
         int fila = this.getFila(color);
         int conteoFichas = 0;
         for (int i=0; i<fichas[fila].length; i++){
-            conteoFichas++;
+            if (fichas[fila][i] != null) {
+                conteoFichas++;
+            }
         }
         return conteoFichas == DIMENSION;
     }
