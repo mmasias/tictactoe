@@ -14,10 +14,16 @@ class Tablero {
     public void mostrar() {
         for (int i = 0; i < DIMENSION; i++) {
             for (int j = 0; j < DIMENSION; j++) {
-                System.out.print(" " + casillas[i][j]);
+                System.out.println(this.getColor(new Coordenada(i,j)) + " ");    
             }
             System.out.println();
         }
+    }
+
+    private String getColor(Coordenada coordenada) {
+        if (this.ocupada(coordenada, 'o')){ return 'o'; }
+        if (this.ocupada(coordenada, 'x')){ return 'x'; }
+        return VACIA;
     }
 
     public boolean estaCompleto(Jugador jugador) {
