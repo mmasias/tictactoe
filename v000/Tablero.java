@@ -54,7 +54,17 @@ class Tablero {
     }    
 
     public boolean ocupado(Coordenada coordenada) {
-        return casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] != VACIA;
+        return this.ocupado(coordenada, 'o') || this.ocupado(coordenada, 'x');
+    }
+
+    private boolean ocupado(Coordenada coordenada, char color) {
+        int fila = this.getFila(color);
+        for (int i = 0; i < fichas[fila].length; i++) {
+            if (fichas[fila][i]!=null && fichas[fila][i].igual(coordenada)){
+                return true;
+            }
+        }
+        return false;
     }
 
     public void ponerFicha(Coordenada coordenada, char color) {
