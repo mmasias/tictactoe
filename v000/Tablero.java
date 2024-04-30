@@ -88,6 +88,12 @@ class Tablero {
     }
 
     public void sacarFicha(Coordenada coordenada) {
-        casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] = VACIA;
+        for(int i=0; i<fichas.length; i++){
+            for (int j=0; j<fichas[i].length; j++){
+                if (fichas[i][j]!=null && fichas[i][j].igual(coordenada)){
+                    fichas[i][j] = null;
+                }
+            }
+        }
     }
 }
