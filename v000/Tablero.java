@@ -2,18 +2,13 @@ package v000;
 
 class Tablero {
 
-    private char[][] casillas;
+    private Coordenada[][] fichas;
+
     private final int DIMENSION = 3;
     private final char VACIA = '_';
 
     public Tablero() {
-        casillas = new char[DIMENSION][DIMENSION];
-
-        for (int i = 0; i < DIMENSION; i++) {
-            for (int j = 0; j < DIMENSION; j++) {
-                casillas[i][j] = VACIA;
-            }
-        }
+        fichas = new Coordenada[2][3];
     }
 
     public void mostrar() {
