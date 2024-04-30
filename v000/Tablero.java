@@ -75,7 +75,12 @@ class Tablero {
     }
 
     public void ponerFicha(Coordenada coordenada, char color) {
-        casillas[coordenada.getFila() - 1][coordenada.getColumna() - 1] = color;
+        int fila = this.getFila(color);
+        int i = 1;
+        while (fichas[fila][i] != null){
+            i++;
+        }
+        fichas[fila][i] = coordenada;
     }
 
     public boolean vacio(Coordenada coordenada) {
