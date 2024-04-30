@@ -78,7 +78,7 @@ class Tablero {
 
     public void ponerFicha(Coordenada coordenada, char color) {
         int fila = this.getFila(color);
-        int i = 1;
+        int i = 0;
         while (fichas[fila][i] != null){
             i++;
         }

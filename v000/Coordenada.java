@@ -9,7 +9,7 @@ public class Coordenada {
 
     private static final Intervalo LIMITES = new Intervalo(1, 3);;
 
-    public Coordenada(){
+    public Coordenada() {
     }
 
     public Coordenada(int fila, int columna) {
@@ -48,7 +48,23 @@ public class Coordenada {
     }
 
     public static void main(String[] args) {
-        Coordenada coordenada = new Coordenada(0,0);
+        Coordenada coordenada = new Coordenada(0, 0);
+    }
+
+    public int direcion(Coordenada coordenada) {
+        if (fila == coordenada.fila) {
+            return 0;
+        }
+        if (columna == coordenada.columna) {
+            return 1;
+        }
+        if (fila - columna == 0 && coordenada.fila - coordenada.columna == 0) {
+            return 2;
+        }
+        if (fila + columna == 4 && coordenada.fila + coordenada.columna == 4) {
+            return 3;
+        }
+        return -1;
     }
 
 }
